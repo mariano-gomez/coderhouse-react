@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const CartWIdget = () => {
+const CartWidget = () => {
     return (
         <div className="cart-widget">
             <FontAwesomeIcon icon={"shopping-cart"} />
@@ -9,4 +9,4 @@ const CartWIdget = () => {
     );
 }
 
-export default CartWIdget;
+export default CartWidget;

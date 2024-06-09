@@ -1,6 +1,6 @@
 import React from 'react';
-import CartWIdget from "../CartWidget/CartWIdget.jsx";
 import {Flex, Spacer, Text} from "@chakra-ui/react";
+import CartWidget from "../CartWidget/CartWidget.jsx";
 
 const NavBar = () => {
     return (
@@ -8,7 +8,7 @@ const NavBar = () => {
             <Text>
                 Logo
             </Text>
-            <CartWIdget/>
+            <CartWidget/>
         </Flex>
     );
 }
