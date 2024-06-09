@@ -1,12 +1,40 @@
-import React from 'react';
-import {Heading} from "@chakra-ui/react";
+import React, { useState, useEffect } from 'react';
+import { Center, Heading} from "@chakra-ui/react";
+import { useParams} from "react-router-dom";
+import ItemList from "../ItemList/ItemList.jsx";
+import {getProducts, getProductsByCategory} from "../../utils/helperFunctions.js";
+import { BarLoader } from "react-spinners";
 
-const ItemListContainer = (props) => {
+const ItemListContainer = ({ title, ...props }) => {
+
+    const [products, setProducts] = useState([])
+    const [isLoading, setIsLoading] = useState(true);
+
+    const { categoryId } = useParams()
+
+    useEffect(() => {
+        setIsLoading(true);
+        const dataProducts = categoryId ? getProductsByCategory(categoryId) : getProducts()
+        dataProducts.then((data) => {
+            setProducts(data)
+        })
+        .catch((error) => console.log(error))
+        .finally(() => setIsLoading(false))
+    },[categoryId])
+
     return (
         <div>
             <Heading>
-                {props.children}
+                {title}
             </Heading>
+            {
+                isLoading ?
+                    <Center mt='10%'>
+                        <BarLoader />
+                    </Center>
+                    :
+                    <ItemList products={products} />
+            }
         </div>
     );
 }

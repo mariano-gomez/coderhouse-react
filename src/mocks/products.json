@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "name": "Balón de fútbol",
+    "price": 19.99,
+    "category": "Futbol",
+    "stock": 34,
+    "description": "Balón de fútbol tamaño oficial.",
+    "img": "https://example.com/imagen_balon_futbol.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Guantes de portero",
+    "price": 25.99,
+    "category": "Futbol",
+    "stock": 18,
+    "description": "Guantes de portero con agarre mejorado.",
+    "img": "https://example.com/imagen_guantes_portero.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Espinilleras",
+    "price": 12.50,
+    "category": "Futbol",
+    "stock": 57,
+    "description": "Espinilleras ligeras y resistentes.",
+    "img": "https://example.com/imagen_espinilleras.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Camiseta de fútbol",
+    "price": 29.99,
+    "category": "Futbol",
+    "stock": 23,
+    "description": "Camiseta de fútbol transpirable.",
+    "img": "https://example.com/imagen_camiseta_futbol.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Conos de entrenamiento",
+    "price": 14.99,
+    "category": "Futbol",
+    "stock": 66,
+    "description": "Conos de entrenamiento para agilidad.",
+    "img": "https://example.com/imagen_conos_entrenamiento.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Zapatillas de running",
+    "price": 59.95,
+    "category": "Running",
+    "stock": 45,
+    "description": "Zapatillas de running ligeras y cómodas.",
+    "img": "https://example.com/imagen_zapatillas_running.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Reloj deportivo",
+    "price": 99.99,
+    "category": "Running",
+    "stock": 28,
+    "description": "Reloj deportivo con GPS y monitor de frecuencia cardíaca.",
+    "img": "https://example.com/imagen_reloj_deportivo.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Camiseta de running",
+    "price": 25.00,
+    "category": "Running",
+    "stock": 35,
+    "description": "Camiseta de running transpirable.",
+    "img": "https://example.com/imagen_camiseta_running.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Pantalones de running",
+    "price": 34.99,
+    "category": "Running",
+    "stock": 20,
+    "description": "Pantalones de running ligeros.",
+    "img": "https://example.com/imagen_pantalones_running.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Cinturón de hidratación",
+    "price": 18.50,
+    "category": "Running",
+    "stock": 42,
+    "description": "Cinturón de hidratación con botellas.",
+    "img": "https://example.com/imagen_cinturon_hidratacion.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Bicicleta de montaña",
+    "price": 499.99,
+    "category": "Ciclismo",
+    "stock": 8,
+    "description": "Bicicleta de montaña con suspensión total.",
+    "img": "https://example.com/imagen_bicicleta_montana.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Casco de ciclismo",
+    "price": 45.00,
+    "category": "Ciclismo",
+    "stock": 33,
+    "description": "Casco de ciclismo con ventilación.",
+    "img": "https://example.com/imagen_casco_ciclismo.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Guantes de ciclismo",
+    "price": 15.99,
+    "category": "Ciclismo",
+    "stock": 27,
+    "description": "Guantes de ciclismo con acolchado.",
+    "img": "https://example.com/imagen_guantes_ciclismo.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Luz trasera para bicicleta",
+    "price": 12.99,
+    "category": "Ciclismo",
+    "stock": 49,
+    "description": "Luz trasera para bicicleta recargable.",
+    "img": "https://example.com/imagen_luz_bicicleta.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Pedales de bicicleta",
+    "price": 29.50,
+    "category": "Ciclismo",
+    "stock": 15,
+    "description": "Pedales de bicicleta antideslizantes.",
+    "img": "https://example.com/imagen_pedales_bicicleta.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Mancuernas ajustables",
+    "price": 75.00,
+    "category": "Fitness",
+    "stock": 37,
+    "description": "Mancuernas ajustables de 2 a 20 kg.",
+    "img": "https://example.com/imagen_mancuernas_ajustables.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Pesa rusa 10kg",
+    "price": 35.00,
+    "category": "Fitness",
+    "stock": 65,
+    "description": "Pesa rusa de 10 kg para entrenamiento de fuerza.",
+    "img": "https://example.com/imagen_pesa_rusa.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Cuerda para saltar",
+    "price": 9.99,
+    "category": "Fitness",
+    "stock": 90,
+    "description": "Cuerda para saltar ajustable y ligera.",
+    "img": "https://example.com/imagen_cuerda_saltar.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Aro de hula hula",
+    "price": 14.99,
+    "category": "Fitness",
+    "stock": 55,
+    "description": "Aro de hula hula ajustable y desmontable.",
+    "img": "https://example.com/imagen_aro_hula.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Chaleco de peso",
+    "price": 65.00,
+    "category": "Fitness",
+    "stock": 19,
+    "description": "Chaleco de peso ajustable para entrenamiento.",
+    "img": "https://example.com/imagen_chaleco_peso.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Estera de yoga",
+    "price": 20.99,
+    "category": "Yoga",
+    "stock": 78,
+    "description": "Estera de yoga antideslizante.",
+    "img": "https://example.com/imagen_estera_yoga.jpg"
+  },
+  {
+    "id": 22,
+    "name": "Pantalones de yoga",
+    "price": 22.99,
+    "category": "Yoga",
+    "stock": 52,
+    "description": "Pantalones de yoga elásticos y cómodos.",
+    "img": "https://example.com/imagen_pantalones_yoga.jpg"
+  },
+  {
+    "id": 23,
+    "name": "Pelota de yoga",
+    "price": 25.00,
+    "category": "Yoga",
+    "stock": 76,
+    "description": "Pelota de yoga antideslizante.",
+    "img": "https://example.com/imagen_pelota_yoga.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Bloques de yoga",
+    "price": 12.50,
+    "category": "Yoga",
+    "stock": 41,
+    "description": "Bloques de yoga de espuma de alta densidad.",
+    "img": "https://example.com/imagen_bloques_yoga.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Correa de yoga",
+    "price": 9.99,
+    "category": "Yoga",
+    "stock": 39,
+    "description": "Correa de yoga para estiramientos.",
+    "img": "https://example.com/imagen_correa_yoga.jpg"
+  },
+  {
+    "id": 26,
+    "name": "Kit de yoga",
+    "price": 45.00,
+    "category": "Yoga",
+    "stock": 29,
+    "description": "Kit de yoga con estera, bloques y correa.",
+    "img": "https://example.com/imagen_kit_yoga.jpg"
+  },
+  {
+    "id": 27,
+    "name": "Balón medicinal",
+    "price": 32.00,
+    "category": "Fitness",
+    "stock": 24,
+    "description": "Balón medicinal de 5 kg.",
+    "img": "https://example.com/imagen_balon_medicinal.jpg"
+  },
+  {
+    "id": 28,
+    "name": "Banda de resistencia",
+    "price": 8.99,
+    "category": "Fitness",
+    "stock": 72,
+    "description": "Banda de resistencia de látex.",
+    "img": "https://example.com/imagen_banda_resistencia.jpg"
+  },
+  {
+    "id": 29,
+    "name": "Kit de pesas",
+    "price": 55.00,
+    "category": "Fitness",
+    "stock": 15,
+    "description": "Kit de pesas ajustables de 20 kg.",
+    "img": "https://example.com/imagen_kit_pesas.jpg"
+  },
+  {
+    "id": 30,
+    "name": "Esterilla de ejercicio",
+    "price": 18.50,
+    "category": "Fitness",
+    "stock": 61,
+    "description": "Esterilla de ejercicio antideslizante.",
+    "img": "https://example.com/imagen_esterilla_ejercicio.jpg"
+  }
+]
