@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Button, ButtonGroup, Flex } from '@chakra-ui/react'
+import {Box, Button, ButtonGroup, Flex} from '@chakra-ui/react'
 
 const ItemCount = ({ stock, valorInicial, onAdd }) => {
     const [ count, setCount ] = useState(1)
@@ -13,12 +13,12 @@ const ItemCount = ({ stock, valorInicial, onAdd }) => {
     }
 
   return (
-    <Flex>
+    <Box align='center'>
         <Button colorScheme='blue'onClick={decrementar}>-</Button>
             {count}
         <Button colorScheme='blue' onClick={incrementar}>+</Button>
         <Button onClick={() => onAdd(count)}>Agregar al carrito</Button>
-    </Flex>
+    </Box>
   )
 }
 

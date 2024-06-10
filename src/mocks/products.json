@@ -1,30 +1,30 @@
 [
   {
     "id": 1,
-    "name": "Balón de fútbol",
+    "name": "Pelota de fútbol",
     "price": 19.99,
     "category": "Futbol",
     "stock": 34,
     "description": "Balón de fútbol tamaño oficial.",
-    "img": "https://example.com/imagen_balon_futbol.jpg"
+    "img": "https://http2.mlstatic.com/D_NQ_NP_880648-MLA70107390737_062023-O.webp"
   },
   {
     "id": 2,
-    "name": "Guantes de portero",
+    "name": "Guantes de arquero",
     "price": 25.99,
     "category": "Futbol",
     "stock": 18,
-    "description": "Guantes de portero con agarre mejorado.",
-    "img": "https://example.com/imagen_guantes_portero.jpg"
+    "description": "Guantes de arquero con agarre mejorado.",
+    "img": "https://canalshowsport.com.ar/wp-content/uploads/2022/12/dibu1.png"
   },
   {
     "id": 3,
-    "name": "Espinilleras",
+    "name": "Canilleras",
     "price": 12.50,
     "category": "Futbol",
     "stock": 57,
-    "description": "Espinilleras ligeras y resistentes.",
-    "img": "https://example.com/imagen_espinilleras.jpg"
+    "description": "Canilleras ligeras y resistentes.",
+    "img": "https://i.pinimg.com/originals/05/7a/5d/057a5d6e331abcc4ed32253a15d6c9f2.jpg"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "category": "Futbol",
     "stock": 23,
     "description": "Camiseta de fútbol transpirable.",
-    "img": "https://example.com/imagen_camiseta_futbol.jpg"
+    "img": "https://afaar.vtexassets.com/arquivos/ids/156628/IP8388_FC_eCom.jpg"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "category": "Futbol",
     "stock": 66,
     "description": "Conos de entrenamiento para agilidad.",
-    "img": "https://example.com/imagen_conos_entrenamiento.jpg"
+    "img": "https://acdn.mitiendanube.com/stores/001/219/670/products/cono21-b2157fade5b64bc53a16934894823079-1024-1024.jpg"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "category": "Running",
     "stock": 45,
     "description": "Zapatillas de running ligeras y cómodas.",
-    "img": "https://example.com/imagen_zapatillas_running.jpg"
+    "img": "https://assets.adidas.com/images/w_600,f_auto,q_auto/f8bc2c70b30940a7acda118f6fdde902_9366/Zapatillas_Running_Switch_Run_Negro_IF5720_01_standard.jpg"
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "category": "Running",
     "stock": 28,
     "description": "Reloj deportivo con GPS y monitor de frecuencia cardíaca.",
-    "img": "https://example.com/imagen_reloj_deportivo.jpg"
+    "img": "https://i.blogs.es/5baf81/fen/450_1000.jpg"
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "category": "Running",
     "stock": 35,
     "description": "Camiseta de running transpirable.",
-    "img": "https://example.com/imagen_camiseta_running.jpg"
+    "img": "https://d368r8jqz0fwvm.cloudfront.net/30250-product_lg/remera-running-de-hombre-agile.jpg"
   },
   {
     "id": 9,
@@ -78,7 +78,7 @@
     "category": "Running",
     "stock": 20,
     "description": "Pantalones de running ligeros.",
-    "img": "https://example.com/imagen_pantalones_running.jpg"
+    "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f6c93426-2a5f-4268-90a1-f1cda9f70db0/phenom-elite-pantalon-de-running-de-tejido-knit-qJWPv5.png"
   },
   {
     "id": 10,
@@ -87,7 +87,7 @@
     "category": "Running",
     "stock": 42,
     "description": "Cinturón de hidratación con botellas.",
-    "img": "https://example.com/imagen_cinturon_hidratacion.jpg"
+    "img": "https://static.nike.com/a/images/f_auto/dpr_3.0,cs_srgb/w_403,c_limit/116ff29d-e7a7-4e25-ad18-0e3b6ef164df/mejores-chalecos-y-cinturones-de-hidrataci%C3%B3n-para-running-de-nike.jpg"
   },
   {
     "id": 11,
@@ -96,7 +96,7 @@
     "category": "Ciclismo",
     "stock": 8,
     "description": "Bicicleta de montaña con suspensión total.",
-    "img": "https://example.com/imagen_bicicleta_montana.jpg"
+    "img": "https://s.libertaddigital.com/2022/06/09/bicicleta-de-montana-savadeck-svmb0013.jpg"
   },
   {
     "id": 12,
@@ -105,7 +105,7 @@
     "category": "Ciclismo",
     "stock": 33,
     "description": "Casco de ciclismo con ventilación.",
-    "img": "https://example.com/imagen_casco_ciclismo.jpg"
+    "img": "https://http2.mlstatic.com/D_NQ_NP_630849-MLA52905979005_122022-O.webp"
   },
   {
     "id": 13,
@@ -114,7 +114,7 @@
     "category": "Ciclismo",
     "stock": 27,
     "description": "Guantes de ciclismo con acolchado.",
-    "img": "https://example.com/imagen_guantes_ciclismo.jpg"
+    "img": "https://www.sumitate.com.ar/img/articulos/guantes_ciclismo_largos_giro_rivet_ii_2_imagen1.jpg"
   },
   {
     "id": 14,
@@ -123,7 +123,7 @@
     "category": "Ciclismo",
     "stock": 49,
     "description": "Luz trasera para bicicleta recargable.",
-    "img": "https://example.com/imagen_luz_bicicleta.jpg"
+    "img": "https://ae01.alicdn.com/kf/H39eb2a61f4544c6e8c320f4837f5de04y/WHEEL-UP-luz-trasera-para-bicicleta-resistente-al-agua-recargable-v-a-Usb-para-ciclismo-de.jpg"
   },
   {
     "id": 15,
@@ -132,7 +132,7 @@
     "category": "Ciclismo",
     "stock": 15,
     "description": "Pedales de bicicleta antideslizantes.",
-    "img": "https://example.com/imagen_pedales_bicicleta.jpg"
+    "img": "https://zotta.com.ar/wp-content/uploads/2020/10/11890.jpg"
   },
   {
     "id": 16,
@@ -141,7 +141,7 @@
     "category": "Fitness",
     "stock": 37,
     "description": "Mancuernas ajustables de 2 a 20 kg.",
-    "img": "https://example.com/imagen_mancuernas_ajustables.jpg"
+    "img": "https://www.parnassa.com.ar/product_images/t/742/Rack__50451_std.jpg"
   },
   {
     "id": 17,
@@ -150,7 +150,7 @@
     "category": "Fitness",
     "stock": 65,
     "description": "Pesa rusa de 10 kg para entrenamiento de fuerza.",
-    "img": "https://example.com/imagen_pesa_rusa.jpg"
+    "img": "https://carrefourar.vtexassets.com/arquivos/ids/194992/7798182531445_02.jpg"
   },
   {
     "id": 18,
@@ -159,7 +159,7 @@
     "category": "Fitness",
     "stock": 90,
     "description": "Cuerda para saltar ajustable y ligera.",
-    "img": "https://example.com/imagen_cuerda_saltar.jpg"
+    "img": "https://m.media-amazon.com/images/I/41VPkyVIDrL.jpg"
   },
   {
     "id": 19,
@@ -168,7 +168,7 @@
     "category": "Fitness",
     "stock": 55,
     "description": "Aro de hula hula ajustable y desmontable.",
-    "img": "https://example.com/imagen_aro_hula.jpg"
+    "img": "https://m.media-amazon.com/images/I/81Fq1CxwGQL._AC_UF894,1000_QL80_.jpg"
   },
   {
     "id": 20,
@@ -177,7 +177,7 @@
     "category": "Fitness",
     "stock": 19,
     "description": "Chaleco de peso ajustable para entrenamiento.",
-    "img": "https://example.com/imagen_chaleco_peso.jpg"
+    "img": "https://http2.mlstatic.com/D_NQ_NP_629186-MLU73324995126_122023-O.webp"
   },
   {
     "id": 21,
@@ -186,7 +186,7 @@
     "category": "Yoga",
     "stock": 78,
     "description": "Estera de yoga antideslizante.",
-    "img": "https://example.com/imagen_estera_yoga.jpg"
+    "img": "https://images.fravega.com/f1000/00b3baadf3643993f22a755f3281f371.jpg"
   },
   {
     "id": 22,
@@ -195,7 +195,7 @@
     "category": "Yoga",
     "stock": 52,
     "description": "Pantalones de yoga elásticos y cómodos.",
-    "img": "https://example.com/imagen_pantalones_yoga.jpg"
+    "img": "https://ae01.alicdn.com/kf/S6510b64a00dd44a1a82f7f48d052d546o.jpg_640x640Q90.jpg_.webp"
   },
   {
     "id": 23,
@@ -204,7 +204,7 @@
     "category": "Yoga",
     "stock": 76,
     "description": "Pelota de yoga antideslizante.",
-    "img": "https://example.com/imagen_pelota_yoga.jpg"
+    "img": "https://m.media-amazon.com/images/I/51jPaxHppPL._AC_SL1500_.jpg"
   },
   {
     "id": 24,
@@ -213,7 +213,7 @@
     "category": "Yoga",
     "stock": 41,
     "description": "Bloques de yoga de espuma de alta densidad.",
-    "img": "https://example.com/imagen_bloques_yoga.jpg"
+    "img": "https://http2.mlstatic.com/D_NQ_NP_695660-MLU74680346697_022024-O.webp"
   },
   {
     "id": 25,
@@ -222,7 +222,7 @@
     "category": "Yoga",
     "stock": 39,
     "description": "Correa de yoga para estiramientos.",
-    "img": "https://example.com/imagen_correa_yoga.jpg"
+    "img": "https://http2.mlstatic.com/D_NQ_NP_891446-MLA54834150615_042023-O.webp"
   },
   {
     "id": 26,
@@ -231,7 +231,7 @@
     "category": "Yoga",
     "stock": 29,
     "description": "Kit de yoga con estera, bloques y correa.",
-    "img": "https://example.com/imagen_kit_yoga.jpg"
+    "img": "https://viacotone.com/wp-content/uploads/2023/03/07-3.jpg"
   },
   {
     "id": 27,
@@ -240,7 +240,7 @@
     "category": "Fitness",
     "stock": 24,
     "description": "Balón medicinal de 5 kg.",
-    "img": "https://example.com/imagen_balon_medicinal.jpg"
+    "img": "https://cdn.pedix.app/2DnzazptHVHdoD0C2WZU/products/1680138171827.png"
   },
   {
     "id": 28,
@@ -249,7 +249,7 @@
     "category": "Fitness",
     "stock": 72,
     "description": "Banda de resistencia de látex.",
-    "img": "https://example.com/imagen_banda_resistencia.jpg"
+    "img": "https://acdn.mitiendanube.com/stores/001/333/542/products/121-41c5db37699722c40b16932551355227-240-0.jpg"
   },
   {
     "id": 29,
@@ -258,7 +258,7 @@
     "category": "Fitness",
     "stock": 15,
     "description": "Kit de pesas ajustables de 20 kg.",
-    "img": "https://example.com/imagen_kit_pesas.jpg"
+    "img": "https://http2.mlstatic.com/D_NQ_NP_954092-MLU72152035601_102023-O.webp"
   },
   {
     "id": 30,
@@ -267,6 +267,6 @@
     "category": "Fitness",
     "stock": 61,
     "description": "Esterilla de ejercicio antideslizante.",
-    "img": "https://example.com/imagen_esterilla_ejercicio.jpg"
+    "img": "https://c8.alamy.com/compes/2e14kyc/ejercicios-de-flexibilidad-mujer-joven-atletica-haciendo-yoga-en-la-esterilla-estirando-sus-piernas-durante-el-entrenamiento-en-casa-2e14kyc.jpg"
   }
 ]

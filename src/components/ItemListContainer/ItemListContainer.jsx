@@ -24,8 +24,8 @@ const ItemListContainer = ({ title, ...props }) => {
 
     return (
         <div>
-            <Heading>
-                {title}
+            <Heading align='center'>
+                {title + (categoryId ? ` (${categoryId})` : '')}
             </Heading>
             {
                 isLoading ?
