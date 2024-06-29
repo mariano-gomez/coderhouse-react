@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from "react-router-dom";
 import ItemDetail from "../ItemDetail/ItemDetail.jsx";
-import { getProductById } from "../../utils/helperFunctions.js";
 import {Center} from "@chakra-ui/react";
 import {BarLoader} from "react-spinners";
+import { doc, getDoc } from "firebase/firestore";
+import { db } from "../../config/firebase.js";
 
 function ItemDetailContainer(props) {
     const [product, setProduct] = useState({});
@@ -15,19 +16,18 @@ function ItemDetailContainer(props) {
 
     useEffect(() => {
         setIsLoading(true);
-        getProductById(productId)
-            .then(productData => {
-                if (!productData) {
-                    // navigate('/*')
-                }
-                if (productData) {
-                    setProduct(productData)
-                } else {
-                    alert ('No hay producto')
-                }
-            })
-            .catch((error) => console.log(error))
-            .finally(() => setIsLoading(false))
+        const getData = async () => {
+
+            const queryRef = doc(db, 'products', productId);
+            const response = await getDoc(queryRef)
+            const newItem = {
+                ...response.data(),
+                id: response.id
+            }
+            setProduct(newItem)
+            setIsLoading(false)
+        }
+        getData();
     },[productId])
 
     return (
