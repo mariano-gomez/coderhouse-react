@@ -16,18 +16,19 @@ function ItemDetailContainer(props) {
 
     useEffect(() => {
         setIsLoading(true);
-        const getData = async () => {
 
-            const queryRef = doc(db, 'products', productId);
-            const response = await getDoc(queryRef)
-            const newItem = {
-                ...response.data(),
-                id: response.id
-            }
-            setProduct(newItem)
+        //  we fetch a product from firestore, and we set it in the state
+        const getProductFromFirestore = async () => {
+            const productFromFirestore = await getDoc(
+                doc(db, 'products', productId)
+            )
+            setProduct({
+                ...productFromFirestore.data(),
+                id: productFromFirestore.id
+            })
             setIsLoading(false)
         }
-        getData();
+        getProductFromFirestore()
     },[productId])
 
     return (

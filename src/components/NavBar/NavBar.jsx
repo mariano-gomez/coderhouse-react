@@ -1,21 +1,23 @@
-import {useEffect, useState} from 'react';
-import CartWidget from "../CartWidget/CartWidget.jsx";
+import React from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import {
+    Link as ChakraLink,
+    Image,
+    Box,
     Button,
-    Center,
     Flex,
     Menu,
     MenuButton,
     MenuItem,
-    MenuList,
-    Link as ChakraLink,
-    Text, Box, Image
-} from "@chakra-ui/react";
-import logo from '../../assets/Logo.png'
+    MenuList
+} from '@chakra-ui/react';
+import { getCategories } from "../../utils/helperFunctions.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
-import { getCategories } from "../../utils/helperFunctions.js";
+
+import CartWidget from "../CartWidget/CartWidget.jsx";
+import logo from '../../assets/Logo.png'
 
 const NavBar = () => {
 
@@ -26,45 +28,61 @@ const NavBar = () => {
         categories.then((data) => {
             setCategories(data)
         })
-        .catch((error) => console.log(error))
+            .catch((error) => console.log(error))
     },[])
 
     return (
-        <Flex
-            h={'10hv'}
-            w={'100%'}
-            p={4}
-            bg={'tomato'}
-            justify={'space-between'}
+        <Box
+            as="header"
+            bg="tomato"
+            position="sticky"
+            top="0"
+            zIndex={10}
+            boxShadow="sm"
         >
-            <Box p='4'>
-                <ChakraLink as={Link} width={'30%'} to='/' minWidth={'50px'}>
-                    <Image w={'30%'} src={logo} />
-                </ChakraLink>
-            </Box>
-            <Center>
-                <Menu>
-                    <MenuButton as={Button} rightIcon={<FontAwesomeIcon icon={faAngleDown} />}>
-                        Todas las categorias
-                    </MenuButton>
-                    <MenuList>
-                        <MenuItem>
-                            <Link to='/'>Todas las categorias</Link>
-                        </MenuItem>
-                        {
-                            categories &&
-                            categories.map(category => (
-                                <MenuItem key={category}>
-                                    <Link to={'/category/' + category}>{category}</Link>
-                                </MenuItem>
-                            ))
-                        }
-                    </MenuList>
-                </Menu>
-            </Center>
-            <CartWidget/>
-        </Flex>
+            <Flex
+                as="nav"
+                align="center"
+                justify="space-between"
+                padding={3}
+                width="full"
+            >
+                {/* left section (logo) */}
+                <Box maxW={'30%'}>
+                    <ChakraLink as={Link} to='/'>
+                        <Image w={'15%'} src={logo} />
+                    </ChakraLink>
+                </Box>
+
+                {/* center section (menu) */}
+                <Box>
+                    <Menu>
+                        <MenuButton as={Button} rightIcon={<FontAwesomeIcon icon={faAngleDown} />}>
+                            Todas las categorias
+                        </MenuButton>
+                        <MenuList>
+                            <MenuItem>
+                                <Link to='/'>Todas las categorias</Link>
+                            </MenuItem>
+                            {
+                                categories &&
+                                categories.map(category => (
+                                    <MenuItem key={category}>
+                                        <Link to={'/category/' + category}>{category}</Link>
+                                    </MenuItem>
+                                ))
+                            }
+                        </MenuList>
+                    </Menu>
+                </Box>
+
+                {/* right section (cart) */}
+                <Box>
+                    <CartWidget/>
+                </Box>
+            </Flex>
+        </Box>
     );
-}
+};
 
 export default NavBar;

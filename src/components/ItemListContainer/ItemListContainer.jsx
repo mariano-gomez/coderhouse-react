@@ -16,25 +16,27 @@ const ItemListContainer = ({ title, ...props }) => {
     useEffect(() => {
         setIsLoading(true);
 
-        //  firebase
-        const getData = async () => {
+        //  we fetch the products list from firestore
+        const getProductsFromFirestore = async () => {
             const itemsCollection = collection(db, 'products')
+
+            //  if there's a selected category, we only fetch the products linked to that category. Otherwise, we fetch all
             const queryRef = !categoryId ?
                 itemsCollection :
                 query(itemsCollection, where('category', '==', categoryId))
 
-            const response = await getDocs(queryRef);
+            const productsFromFirestore = await getDocs(queryRef);
 
-            const productos = response.docs.map((doc) => {
+            const parsedProducts = productsFromFirestore.docs.map((prodFromFirestore) => {
                 return {
-                    ...doc.data(),
-                    id: doc.id
+                    ...prodFromFirestore.data(),
+                    id: prodFromFirestore.id
                 }
             })
-            setProducts(productos)
+            setProducts(parsedProducts)
             setIsLoading(false)
         }
-        getData()
+        getProductsFromFirestore()
     },[categoryId])
 
     return (
