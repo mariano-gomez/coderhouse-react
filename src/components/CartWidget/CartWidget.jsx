@@ -1,11 +1,48 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {Box, Button} from "@chakra-ui/react";
+
+import {FaShoppingCart } from 'react-icons/fa';
 
 const CartWidget = () => {
+
+    const [isOpen, setIsOpen] = React.useState(false);
+
+    const handleOpen = () => {
+        setIsOpen(true);
+    };
+
+    const handleClose = () => {
+        setIsOpen(false);
+    };
+
     return (
-        <div className="cart-widget">
-            <FontAwesomeIcon icon={"shopping-cart"} />
-        </div>
+        <>
+            <Button
+                onClick={handleOpen}
+                variant="ghost"
+                leftIcon={<FaShoppingCart />}
+            >
+                Carrito
+            </Button>
+
+            {/* cart Popup */}
+            {isOpen && (
+                <Box
+                    position="absolute"
+                    top="40px"
+                    right="0"
+                    width="300px"
+                    bg="white"
+                    padding={4}
+                    boxShadow="lg"
+                    zIndex={11}
+                >
+                    <h3>Carrito de compras</h3>
+
+                    <Button onClick={handleClose}>Cerrar</Button>
+                </Box>
+            )}
+        </>
     );
 }
 
