@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Box, Button } from '@chakra-ui/react'
 
-const ItemCount = ({ stock, valorInicial, onAdd }) => {
+const ItemCount = ({ stock, initValue, onAdd }) => {
     const [ count, setCount ] = useState(1)
 
     const increase = () => {
@@ -9,7 +9,7 @@ const ItemCount = ({ stock, valorInicial, onAdd }) => {
     }
 
     const decrease = () => {
-        count > valorInicial && setCount(count - 1)
+        count > initValue && setCount(count - 1)
     }
 
   return (
@@ -28,7 +28,6 @@ const ItemCount = ({ stock, valorInicial, onAdd }) => {
         <Button borderRadius="0" colorScheme='blue' width="100%" maxWidth="300px" onClick={() => onAdd(count)}>
             Agregar al carrito
         </Button>
-
     </Box>
   )
 }

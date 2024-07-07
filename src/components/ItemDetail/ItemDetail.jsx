@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import ItemCount from "../ItemCount/ItemCount.jsx";
-import {Box, Heading, Image} from "@chakra-ui/react";
+import { Box, Button, Heading, Image } from "@chakra-ui/react";
+import { Link } from 'react-router-dom';
+import { CartContext } from "../../context/CartContext.jsx";
 
 function ItemDetail({ product: { id, name, stock, price, img, description }, ...props }) {
+    const [ quantity, setQuantity ] = useState(0)
+    const { addItem } = useContext(CartContext)
 
-    const onAdd = (count) => {
-        console.log('Soon...');
+    const onAdd = (inputQuantity) => {
+        const item = {
+            id,
+            name,
+            price,
+            img
+        }
+        addItem(item, inputQuantity)
+        setQuantity(inputQuantity)
     }
 
     return (
@@ -26,7 +37,10 @@ function ItemDetail({ product: { id, name, stock, price, img, description }, ...
                         <b>Precio:</b> $ {price.toFixed(2)}
                     </p>
                     <p>
-                        <b>nombre:</b> {name}
+                        <b>Producto:</b> {name}
+                    </p>
+                    <p>
+                        <b>Stock:</b> {quantity}
                     </p>
                     <p>
                         <b>Detalle del producto:</b>
@@ -34,7 +48,18 @@ function ItemDetail({ product: { id, name, stock, price, img, description }, ...
                         {description}
                     </p>
                     <br/>
-                    <ItemCount stock={stock} valorInicial={1} onAdd={onAdd} />
+                    {
+                        quantity ?
+                            <Box align='center'>
+                                <Box display="flex" width="100%" maxWidth="300px" mb={4}>
+                                    <Button borderRadius="0" colorScheme='blue' flex="1">
+                                        <Link to='/cart'>Ir al carrito</Link>
+                                    </Button>
+                                </Box>
+                            </Box>
+                            :
+                            <ItemCount stock={stock} initValue={1} onAdd={onAdd}/>
+                    }
                 </div>
             </Box>
         </>
