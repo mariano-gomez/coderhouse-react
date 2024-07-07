@@ -4,21 +4,31 @@ import { Box, Button } from '@chakra-ui/react'
 const ItemCount = ({ stock, valorInicial, onAdd }) => {
     const [ count, setCount ] = useState(1)
 
-    const incrementar = () => {
+    const increase = () => {
         count < stock && setCount(count + 1)
     }
 
-    const decrementar = () => {
+    const decrease = () => {
         count > valorInicial && setCount(count - 1)
     }
 
   return (
     <Box align='center'>
-        <Button colorScheme='blue'onClick={decrementar}>-</Button>
-            <span style={{paddingLeft: '10px', paddingRight: '10px'}}>{count}</span>
-        <Button colorScheme='blue' onClick={incrementar}>+</Button>
-        <br/>
-        <Button onClick={() => onAdd(count)}>Agregar al carrito</Button>
+        <Box display="flex" width="100%" maxWidth="300px" mb={4}>
+            <Button borderRadius="0" colorScheme='blue' onClick={decrease} flex="1">
+                -
+            </Button>
+            <Box as="span" flex="1" textAlign="center" display="flex" alignItems="center" justifyContent="center">
+                {count}
+            </Box>
+            <Button borderRadius="0" colorScheme='blue' onClick={increase} flex="1">
+                +
+            </Button>
+        </Box>
+        <Button borderRadius="0" colorScheme='blue' width="100%" maxWidth="300px" onClick={() => onAdd(count)}>
+            Agregar al carrito
+        </Button>
+
     </Box>
   )
 }
