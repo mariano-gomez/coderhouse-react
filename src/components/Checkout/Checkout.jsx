@@ -117,7 +117,7 @@ const Checkout = () => {
             const order = {
                 buyer: user,
                 cart: cart,
-                total: getTotal(),
+                total: `$ ${getTotal().toFixed(2)}`,
                 fecha: Timestamp.now()
             }
 
@@ -142,64 +142,63 @@ const Checkout = () => {
   return (
       <>
           {
+              isLoading ?
+                  <Center mt='10%'>
+                      <BarLoader />
+                  </Center>
+                  :
+                  <Center mt={10}>
+                      <Flex direction={'column'} align={'center'} justify={'center'}>
 
-          isLoading ?
-              <Center mt='10%'>
-                  <BarLoader />
-              </Center>
-              :
-              <Center mt={10}>
-                  <Flex direction={'column'} align={'center'} justify={'center'}>
-
-                      <Heading>Datos de facturación</Heading>
-                      <Flex w={'100%'} justify={'center'} align={'center'}>
-                          <FormControl isInvalid={Object.keys(error).length > 0}>
-                              <FormLabel>Nombre</FormLabel>
-                              <Input
-                                  type='text'
-                                  name='name'
-                                  placeholder='Tu nombre y apellido'
-                                  onChange={updateUser}
-                              />
-                              <FormErrorMessage>{error.name}</FormErrorMessage>
-                              <FormLabel>Email</FormLabel>
-                              <Input
-                                  type='email'
-                                  name='email'
-                                  placeholder='tumail@dominio.com'
-                                  onChange={updateUser}
-                              />
-                              <FormErrorMessage>{error.email}</FormErrorMessage>
-                              <FormLabel>Repetir email</FormLabel>
-                              <Input
-                                  type='email'
-                                  name='repeatEmail'
-                                  placeholder='tumail@dominio.com'
-                                  onChange={updateUser}
-                              />
-                              <FormErrorMessage>{error.repeatEmail}</FormErrorMessage>
-                              <FormLabel>DNI</FormLabel>
-                              <Input
-                                  type='text'
-                                  name='dni'
-                                  placeholder='35123987'
-                                  onChange={updateUser}
-                              />
-                              <FormErrorMessage>{error.dni}</FormErrorMessage>
-                              <FormLabel>Teléfono</FormLabel>
-                              <Input
-                                  type='text'
-                                  name='phone'
-                                  placeholder='11223344'
-                                  onChange={updateUser}
-                              />
-                          </FormControl>
+                          <Heading>Datos de facturación</Heading>
+                          <Flex w={'100%'} justify={'center'} align={'center'}>
+                              <FormControl isInvalid={Object.keys(error).length > 0}>
+                                  <FormLabel>Nombre</FormLabel>
+                                  <Input
+                                      type='text'
+                                      name='name'
+                                      placeholder='Tu nombre y apellido'
+                                      onChange={updateUser}
+                                  />
+                                  <FormErrorMessage>{error.name}</FormErrorMessage>
+                                  <FormLabel>Email</FormLabel>
+                                  <Input
+                                      type='email'
+                                      name='email'
+                                      placeholder='tumail@dominio.com'
+                                      onChange={updateUser}
+                                  />
+                                  <FormErrorMessage>{error.email}</FormErrorMessage>
+                                  <FormLabel>Repetir email</FormLabel>
+                                  <Input
+                                      type='email'
+                                      name='repeatEmail'
+                                      placeholder='tumail@dominio.com'
+                                      onChange={updateUser}
+                                  />
+                                  <FormErrorMessage>{error.repeatEmail}</FormErrorMessage>
+                                  <FormLabel>DNI</FormLabel>
+                                  <Input
+                                      type='text'
+                                      name='dni'
+                                      placeholder='35123987'
+                                      onChange={updateUser}
+                                  />
+                                  <FormErrorMessage>{error.dni}</FormErrorMessage>
+                                  <FormLabel>Teléfono</FormLabel>
+                                  <Input
+                                      type='text'
+                                      name='phone'
+                                      placeholder='11223344'
+                                      onChange={updateUser}
+                                  />
+                              </FormControl>
+                          </Flex>
+                          <Button mt={5} onClick={createOrder}>
+                              Finalizar compra
+                          </Button>
                       </Flex>
-                      <Button mt={5} onClick={createOrder}>
-                          Finalizar compra
-                      </Button>
-                  </Flex>
-              </Center>
+                  </Center>
           }
       </>
   )

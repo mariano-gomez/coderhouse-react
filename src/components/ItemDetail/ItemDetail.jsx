@@ -40,9 +40,6 @@ function ItemDetail({ product: { id, name, stock, price, img, description }, ...
                         <b>Producto:</b> {name}
                     </p>
                     <p>
-                        <b>Stock:</b> {quantity}
-                    </p>
-                    <p>
                         <b>Detalle del producto:</b>
                         <br/>
                         {description}

@@ -17,7 +17,7 @@ const ItemCount = ({ stock, initValue, onAdd }) => {
         <Box display="flex" width="100%" maxWidth="300px" mb={4}>
             <Button
                 borderRadius="0"
-                colorScheme='orange'
+                colorScheme='blue'
                 onClick={decrease}
                 flex="1"
                 isDisabled={count <= initValue}
