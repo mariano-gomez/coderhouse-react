@@ -15,13 +15,25 @@ const ItemCount = ({ stock, initValue, onAdd }) => {
   return (
     <Box align='center'>
         <Box display="flex" width="100%" maxWidth="300px" mb={4}>
-            <Button borderRadius="0" colorScheme='blue' onClick={decrease} flex="1">
+            <Button
+                borderRadius="0"
+                colorScheme='orange'
+                onClick={decrease}
+                flex="1"
+                isDisabled={count <= initValue}
+            >
                 -
             </Button>
             <Box as="span" flex="1" textAlign="center" display="flex" alignItems="center" justifyContent="center">
                 {count}
             </Box>
-            <Button borderRadius="0" colorScheme='blue' onClick={increase} flex="1">
+            <Button
+                borderRadius="0"
+                colorScheme='blue'
+                onClick={increase}
+                flex="1"
+                isDisabled={count >= stock}
+            >
                 +
             </Button>
         </Box>
